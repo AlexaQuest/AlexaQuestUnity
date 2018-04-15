@@ -4287,7 +4287,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 874037015
+  randomSeed: -1861329864
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7642,28 +7642,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!1 &1408349849 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1946059219667242, guid: baf3bfbde81dc9c408cfafd629edf203,
-    type: 2}
-  m_PrefabInternal: {fileID: 1757792309}
---- !u!95 &1408349850
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1408349849}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ace388b12f4f94f1e9d50b21411ed653, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1453165563
 Prefab:
   m_ObjectHideFlags: 0
@@ -7885,8 +7863,7 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.4027354
       objectReference: {fileID: 0}
-    - target: {fileID: 95460480202930902, guid: baf3bfbde81dc9c408cfafd629edf203,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: b6ec420a4c520d64ab6d989d7a4d34f9, type: 3}
