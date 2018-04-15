@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 4923670703962548}
   - component: {fileID: 33244281523318004}
   - component: {fileID: 23312587179951098}
-  - component: {fileID: 95562727741323472}
+  - component: {fileID: 114681852063788136}
   m_Layer: 0
   m_Name: google 2
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946059219667242}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.72, y: -1, z: -1.54}
+  m_LocalPosition: {x: 1.88, y: -0, z: -0.68}
   m_LocalScale: {x: 1, y: 1, z: 1.4027352}
   m_Children:
   - {fileID: 4413800179383516}
@@ -202,20 +202,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95562727741323472
-Animator:
-  serializedVersion: 3
+--- !u!114 &114681852063788136
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946059219667242}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b6ec420a4c520d64ab6d989d7a4d34f9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 882245f34373a5545b41dac7bbe69c7c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7620083e155c3540a6f579d7af988d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10

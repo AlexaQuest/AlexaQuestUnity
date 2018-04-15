@@ -2,12 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using GameAPI;
+using NUnit.Framework;
 using UnityEngine;
 
 public class APIConnector : MonoBehaviour
 {
+    public static APIConnector ApiConnector;
     public List<APIEventListener> Handlers = new List<APIEventListener>();
+    public GameController GameController;
 
+    APIConnector()
+    {
+        ApiConnector = this;
+    }
+    
     IEnumerator DownloadWebService()
     {
         while (true)
@@ -22,6 +30,7 @@ public class APIConnector : MonoBehaviour
     void ExtractCommand(string result)
     {
         if (result.Equals("")) return;
+        if (!GameController.PlayerTurn) return;
         APIEventType eventType = (APIEventType) Enum.Parse(typeof(APIEventType), result, true);
         Debug.Log("event triggered: " + eventType);
         foreach (APIEventListener apiEventListener in Handlers)
@@ -29,11 +38,22 @@ public class APIConnector : MonoBehaviour
             if (apiEventListener == null) return;
             apiEventListener.HandleEvent(eventType);
         }
+
+        GameController.PlayerTurn = false;
+        foreach (EnemyController Enemy in GameController.Enemies)
+        {
+            Enemy.TakeTurn();
+        }
+        GameController.PlayerTurn = true;
     }
 
-    // Use this for initialization
     void Start()
     {
         StartCoroutine(DownloadWebService());
+    }
+
+    public void GameOver()
+    {
+        Handlers = new List<APIEventListener>();
     }
 }
