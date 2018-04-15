@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using GameAPI;
-using NUnit.Framework;
 using UnityEngine;
 
 public class APIConnector : MonoBehaviour
