@@ -23,6 +23,7 @@ public class APIConnector : MonoBehaviour
     {
         if (result.Equals("")) return;
         APIEventType eventType = (APIEventType) Enum.Parse(typeof(APIEventType), result, true);
+        Debug.Log("event triggered: " + eventType);
         foreach (APIEventListener apiEventListener in Handlers)
         {
             if (apiEventListener == null) return;
