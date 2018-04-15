@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameAPI;
+﻿using GameAPI;
 using UnityEngine;
 
-public class SwordListener : APIEventListener {
+public class SwordListener : APIEventListener
+{
+    private Animator anim;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
-	public override void HandleEvent(APIEventType apievent)
-	{
-		if (apievent == APIEventType.ATTACK)
-		{
-			transform.Translate(10, 0, 0);
-		}
-	}
+    public override void HandleEvent(APIEventType apievent)
+    {
+        if (apievent == APIEventType.ATTACK)
+        {
+            Debug.Log("sword swing!");
+            anim.SetTrigger("swing");
+        }
+    }
 }
