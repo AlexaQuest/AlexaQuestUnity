@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 33244281523318004}
   - component: {fileID: 23312587179951098}
   - component: {fileID: 114681852063788136}
+  - component: {fileID: 95336173520304996}
   m_Layer: 0
   m_Name: google 2
   m_TagString: Untagged
@@ -195,6 +196,23 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 44177ddc99e4b7545bf1e57be98bb5cf, type: 3}
   m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95336173520304996
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1946059219667242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ace388b12f4f94f1e9d50b21411ed653, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
